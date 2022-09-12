@@ -1,25 +1,13 @@
-import './App.css';
+// import './App.css';
+import nodeColor from 'kuler';
 import logo from './logo.svg';
 
 function App() {
+  const [color, setColor] = useState(nodeColor.random().color);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save the content to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Generate Random Color
-        </a>
-      </header>
+    <div>
+      <h1>Random Color Generator</h1>
     </div>
   );
 }
-
-export default App;
