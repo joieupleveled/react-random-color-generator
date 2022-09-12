@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import nodeColor from 'kuler';
 import logo from './logo.svg';
 
@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div>
-      <h1>Random Color Generator</h1>
+      <h1>Random Color Generator</h1>;
     </div>
   );
 }
+
+export defautl App;
