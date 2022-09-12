@@ -35,7 +35,7 @@ function App() {
           border: '10px solid',
         }}
       >
-        Guess the next color 😏
+        Generate color 😏{color}
       </button>
     </div>
   );
