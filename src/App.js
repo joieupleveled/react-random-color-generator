@@ -1,8 +1,9 @@
 import './App.css';
-import { getByDisplayValue } from '@testing-library/react';
+// import { getByDisplayValue } from '@testing-library/react';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
-import logo from './logo.svg';
+
+// import logo from './logo.svg';
 
 function App() {
   const [color, setColor] = useState('');
