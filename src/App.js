@@ -3,40 +3,37 @@ import './App.css';
 import randomColor from 'randomcolor';
 import { useState } from 'react';
 
-// import logo from './logo.svg';
-
 function App() {
   const [color, setColor] = useState('');
 
   return (
-    <div>
-      <div
-        style={{
-          margin: '0 auto',
-          display: 'flex',
-          justifycontent: 'center',
-          alignItems: 'center',
-          fontSize: 30,
-          border: '1px solid',
-        }}
-      >
-        <h1>Random Color Generator</h1>;
-      </div>
+    <div
+      className="colorBox"
+      style={{
+        width: 600,
+        height: 200,
+        fontSize: 10,
+        borderRadius: 10,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin: '0 auto',
+        color: 'white',
+        backgroundColor: color,
+      }}
+    >
+      <h1>Generate Color{color}</h1>
 
-      <button
-        onClick={() => setColor(randomColor())}
-        style={{
-          backgroundColor: color,
-          margin: '0 auto',
-          display: 'flex',
-          justifycontent: 'center',
-          alignItems: 'center',
-          fontSize: 100,
-          border: '10px solid',
-        }}
-      >
-        Generate color 😏{color}
-      </button>
+      <br />
+      <div>
+        <button
+          onClick={() => {
+            setColor(randomColor);
+          }}
+        >
+          Generate
+        </button>
+      </div>
     </div>
   );
 }
