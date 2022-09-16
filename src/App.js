@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div
-      className="colorBox"
+      className="generated"
       style={{
         width: 600,
         height: 200,
@@ -22,7 +22,7 @@ function App() {
         backgroundColor: color,
       }}
     >
-      <h1>Generate Color{color}</h1>
+      <h1>Generated Color: {color}</h1>
 
       <br />
       <div>
