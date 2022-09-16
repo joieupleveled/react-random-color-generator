@@ -22,9 +22,7 @@ function App() {
         backgroundColor: color,
       }}
     >
-      <h1>Generated Color: {color}</h1>
-
-      <br />
+      Generated Color: {color}
       <div>
         <button
           onClick={() => {
