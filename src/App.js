@@ -25,16 +25,15 @@ function App() {
         }}
       >
         Generated Color: {color}
-        <div />
-        <div>
-          <button
-            onClick={() => {
-              setColor(randomColor);
-            }}
-          >
-            Generate
-          </button>
-        </div>
+      </div>
+      <div>
+        <button
+          onClick={() => {
+            setColor(randomColor);
+          }}
+        >
+          Generate
+        </button>
       </div>
     </>
   );
